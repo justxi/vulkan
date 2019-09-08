@@ -1,0 +1,11 @@
+--- a/pal/shared/gpuopen/inc/util/sharedptr.h	2019-09-07 18:37:04.940697245 +0200
++++ b/pal/shared/gpuopen/inc/util/sharedptr.h	2019-09-07 18:36:23.169697404 +0200
+@@ -191,6 +191,8 @@
+         // Create SharedPointer object with the default constructor
+         constexpr SharedPointer() : SharedPointerBase() {};
+ 
++	SharedPointer(const SharedPointer<T> &right) = default;
++
+         // Copy conversion constructor. Creates a new object if you can cast from type U to type T.
+         template <typename U, typename = typename Platform::EnableIf<Platform::IsConvertible<U*, T*>::Value>::Type>
+         SharedPointer(const SharedPointer<U> &right)
