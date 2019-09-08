@@ -2,7 +2,7 @@
   <repo priority="50" quality="experimental">
     <name>vulkan</name>
     <description>Ebuilds to install Vulkan on Gentoo</description>
-    <homepage>https://bugs.gentoo.org/665590</homepage>
+    <homepage>https://github.com/justxi/vulkan</homepage>
     <owner>
       <email>gentoo@holzke.net</email>
       <name>justXi</name>
