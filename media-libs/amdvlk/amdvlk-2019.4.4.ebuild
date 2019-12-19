@@ -22,7 +22,7 @@ DEPEND="dev-util/cmake
 	wayland? (
 		dev-libs/wsa[${MULTILIB_USEDEP}]
 	)
-	dev-util/vulkan-headers"
+	>=dev-util/vulkan-headers-1.1.127"
 
 RDEPEND="${PYTHON_DEPS}
 	x11-libs/libdrm[${MULTILIB_USEDEP}]
