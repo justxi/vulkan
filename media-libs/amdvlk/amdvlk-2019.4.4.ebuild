@@ -78,7 +78,7 @@ src_unpack() {
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
 	#LLVM. At this moment we had to download appropriate source code to build amdvlk.
-	PART="llvm"
+	PART="llvm-project"
 	COMMIT_ID="a62a00e933c3dc76053d7e9aa2efecb82d473d24"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
