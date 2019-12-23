@@ -22,7 +22,7 @@ DEPEND="dev-util/cmake
 	wayland? (
 		dev-libs/wsa[${MULTILIB_USEDEP}]
 	)
-	>=dev-util/vulkan-headers-1.1.127"
+	>=dev-util/vulkan-headers-1.1.129"
 
 RDEPEND="${PYTHON_DEPS}
 	x11-libs/libdrm[${MULTILIB_USEDEP}]
@@ -49,37 +49,37 @@ src_unpack() {
 
 	#xgl
 	PART="xgl"
-	COMMIT_ID="83c89cd727653c4514e2abe30e1633220fdb666e"
+	COMMIT_ID="7e13a8bd0bb57d3cfb3bc014f6b26a8c9bb8bfd9"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
 	#pal
 	PART="pal"
-	COMMIT_ID="5d72cf9890fe2fbb1b87eecc497114e04afaa277"
+	COMMIT_ID="40af910391fb8c287cb37bf520c41310bf88d405"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
 	#pal
 	PART="llpc"
-	COMMIT_ID="dffcaf4565b4153c8cbff64847efbc0f9fb835f9"
+	COMMIT_ID="2efe41812964c88aa38a80c66939ce44ae493fd4"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
 	#spvgen
 	PART="spvgen"
-	COMMIT_ID="f1bc2ba988273c3724afffe72fe9cd933a022ce7"
+	COMMIT_ID="ce06cb5e3116ba77a22c3278dfeadfd865a8977c"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
 	#AMDVLK
 	PART="AMDVLK"
-	COMMIT_ID="887460b07b85a2db434f169e6d02e693cd3d216d"
+	COMMIT_ID="e6d1928269b75ee6b31c69bef185be104f39ca88"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
 	#LLVM. At this moment we had to download appropriate source code to build amdvlk.
 	PART="llvm-project"
-	COMMIT_ID="a62a00e933c3dc76053d7e9aa2efecb82d473d24"
+	COMMIT_ID="cc0df5ace776584f5f7c0c20704d28f445f0e074"
 	git-r3_fetch "${FETCH_URI}/${PART}" ${COMMIT_ID}
 	git-r3_checkout "${FETCH_URI}/${PART}" ${S}/drivers/$PART
 
