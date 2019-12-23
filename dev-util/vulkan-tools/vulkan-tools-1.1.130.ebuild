@@ -32,7 +32,7 @@ COMMON_DEPEND=">=media-libs/vulkan-loader-1.1.125:=[${MULTILIB_USEDEP},wayland?,
 
 BDEPEND="${PYTHON_DEPS}
 	cube? ( dev-util/glslang:=[${MULTILIB_USEDEP}] )"
-DEPEND=">=dev-util/vulkan-headers-1.1.125
+DEPEND=">=dev-util/vulkan-headers-1.1.130
 	${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}"
 
