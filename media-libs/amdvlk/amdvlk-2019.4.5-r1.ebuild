@@ -97,7 +97,6 @@ src_unpack() {
 }
 
 src_prepare() {
-
 	cd ${S}/drivers
 	eapply "${FILESDIR}/amdvlk-2019.3.5-GCC-9.patch"
 
@@ -107,6 +106,7 @@ Identifier "AMDgpu"
 Option  "DRI" "3"
 EndSection
 EOF
+
 	default
 }
 
