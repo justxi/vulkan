@@ -18,7 +18,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="debug wayland"
 
-COMMEN_DEPEND=">=dev-util/vulkan-headers-1.1.129"
+COMMON_DEPEND=">=dev-util/vulkan-headers-1.1.129"
 
 DEPEND="dev-util/cmake
 	wayland? (
