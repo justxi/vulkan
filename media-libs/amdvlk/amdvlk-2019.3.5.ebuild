@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python{3_4,3_5,3_6,3_7} )
+PYTHON_COMPAT=( python{3_6,3_7,3_8,3_9} )
 MULTILIB_COMPAT=( abi_x86_{32,64} )
 
 inherit python-any-r1 git-r3 multilib-minimal flag-o-matic
