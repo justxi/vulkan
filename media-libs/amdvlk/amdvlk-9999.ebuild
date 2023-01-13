@@ -1,7 +1,7 @@
 # Copyright
 #
 
-EAPI=6
+EAPI=7
 
 DESCRIPTION="AMD Open Source Driver for Vulkan"
 HOMEPAGE="https://github.com/GPUOpen-Drivers/AMDVLK"
